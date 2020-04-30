@@ -7,12 +7,12 @@
   "author": "Lucas Rosa <lucas@blubeta.com>",
   "license": "MIT",
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.9",
-    "bs-platform": "5.2.0",
-    "concurrently": "^4.1.2"
+    "@glennsl/bs-jest": "^0.5.1",
+    "bs-platform": "7.3.1",
+    "concurrently": "^5.2.0"
   },
   "peerDependencies": {
-    "bs-platform": "^5.2.0"
+    "bs-platform": "7.3.1"
   },
   "scripts": {
     "build": "bsb -make-world -clean-world",
