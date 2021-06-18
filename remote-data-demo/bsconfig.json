@@ -19,6 +19,5 @@
     "bs-axios",
     "@glennsl/bs-json",
     "remotedata-re"
-  ],
-  "refmt": 3
+  ]
 }

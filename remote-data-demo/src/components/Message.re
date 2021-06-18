@@ -1,4 +1,4 @@
-open Types;
+include Types;
 // reusable component
 [@react.component]
 let make = (~text, ~type_) => {
@@ -8,5 +8,5 @@ let make = (~text, ~type_) => {
     | Error => "message--error"
     };
 
-  <div className> {ReasonReact.string(text)} </div>;
+  <div className> {React.string(text)} </div>;
 };

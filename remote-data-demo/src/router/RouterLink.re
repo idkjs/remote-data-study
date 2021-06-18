@@ -7,7 +7,7 @@ let make = (~href, ~className=?, ~children) => {
     if (!ReactEvent.Mouse.defaultPrevented(event)
         && shouldPreventDefault(event)) {
       ReactEvent.Mouse.preventDefault(event);
-      ReasonReact.Router.push(href);
+      ReasonReactRouter.push(href);
     };
 
   <a href ?className onClick=handleClick> children </a>;

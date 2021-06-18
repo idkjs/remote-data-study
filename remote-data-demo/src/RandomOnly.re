@@ -71,29 +71,29 @@ let make = () => {
     <div className="background" />
     <div className="content">
       <div className="panel">
-        <h2 className="title"> {ReasonReact.string("Ask for advice")} </h2>
+        <h2 className="title"> {React.string("Ask for advice")} </h2>
       </div>
       <div className="delimiter" />
       <div className="panel">
         <button
           onClick=handleRandomClick
           disabled={RemoteData.isLoading(state.randomAdvice)}>
-          {ReasonReact.string("Refresh")}
+          {React.string("Refresh")}
         </button>
         <h2 className="title title--small">
-          {ReasonReact.string("Random wisdom:")}
+          {React.string("Random wisdom:")}
         </h2>
         {switch (state.randomAdvice) {
-         | NotAsked => ReasonReact.null
+         | NotAsked => React.null
          | Success(data) => <RandomAdvice data />
          | Loading(result) =>
            <>
              <div className="loader" />
              {result
               ->Belt.Option.flatMap(data => Some(<RandomAdvice data />))
-              ->Belt.Option.getWithDefault(ReasonReact.null)}
+              ->Belt.Option.getWithDefault(React.null)}
            </>
-         | Failure(err) => <div> {ReasonReact.string(err)} </div>
+         | Failure(err) => <div> {React.string(err)} </div>
          }}
       </div>
     </div>

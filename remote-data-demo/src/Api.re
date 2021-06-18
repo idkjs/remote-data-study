@@ -64,5 +64,4 @@ let fetchRandomAdvice = (): Js.Promise.t(Belt.Result.t(randomResponse, unit)) =>
        )
     |> catch(_ => Belt.Result.Error() |> resolve)
   );
-// fetchRandomAdvice()
-// |> Js.Promise.then_(res => Js.log(res) |> Js.Promise.resolve);
+

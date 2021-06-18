@@ -9,10 +9,10 @@ let make = (~data: searchResponse) => {
       {items
        |> Array.map(item =>
             <li key={item.id} className="search-result-item">
-              {ReasonReact.string(item.value)}
+              {React.string(item.value)}
             </li>
           )
-       |> ReasonReact.array}
+       |> React.array}
     </ol>
   };
 };
